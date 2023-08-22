@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<link rel="stylesheet" href="./signup.css">
+<body>
+<center>
+	<fieldset style="border: 2px solid red; width: 500px; height: 550px; background-color: antiquewhite;">
+    <form action="signup" method="post" enctype="multipart/form-data">
+        <table>
+            <h2 style="text-align: center;">sign up</h2>
+            <tr>
+                <td>First name:</td>
+                <td><input type="text" name="firstname"></td>
+            </tr> 
+
+            <tr>
+                <td>Last name:</td>
+                <td><input type="text" name="last name"></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td>password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            
+              <tr>
+                <td>mobile:</td>
+                <td><input type="tel" pattern="[0-9]{10}" name="mobile" id="mobile" required></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio"dname="gen" id="gen" name="gender">male
+                    <input type="radio" name="gen" id="gen" name="gender">Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Picture:</td>
+                <td><input type="file" name="picture" id="picture" name="picture"></td>
+            </tr>
+
+            <tr>
+                <td>country:</td>
+                <td>
+                    <select name="country" id="country">	
+                        <option value="india">India</option>
+                        <option value="">China</option>
+                        <option value="">pakistan</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>age:</td>
+                <td><input type="date" name="age" id="age" ></td>
+            </tr>
+            
+            <tr>
+                <td>DOB:</td>
+                <td><input type="date" name="DOB" id="dob" required></td>
+            </tr>
+        </table> <br>
+
+         <button type="submit">signup</button>
+         
+         <button type="button">reset</button>
+        
+       <a href="http://localhost:8080/myresturant/login.html"> <h4>already have account?login here</h4></a>
+
+    </form>
+</fieldset>
+</center>
+</body>
+</html>
